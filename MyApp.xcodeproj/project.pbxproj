@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C38E65F1473720A00212999 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB56EB8147363B700D4F7FF /* main.m */; };
+		6C38E6601473720A00212999 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB56EBC147363B700D4F7FF /* AppDelegate.m */; };
+		6C38E6621473720A00212999 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB56EAC147363B700D4F7FF /* UIKit.framework */; };
+		6C38E6631473720A00212999 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB56EAE147363B700D4F7FF /* Foundation.framework */; };
+		6C38E6641473720A00212999 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB56EB0147363B700D4F7FF /* CoreGraphics.framework */; };
+		6C38E6661473720A00212999 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CB56EB5147363B700D4F7FF /* InfoPlist.strings */; };
+		6C38E677147373D000212999 /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C38E6751473732300212999 /* libKIF.a */; };
+		6C407DDB147381B100811466 /* KIFTestScenario+Example.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C407DD6147381B100811466 /* KIFTestScenario+Example.m */; };
+		6C407DDC147381B100811466 /* KIFTestStep+Example.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C407DD8147381B100811466 /* KIFTestStep+Example.m */; };
+		6C407DDD147381B100811466 /* MyAppKIFController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C407DDA147381B100811466 /* MyAppKIFController.m */; };
+		6C407DDF1473826100811466 /* KIFTests.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6C407DDE1473826100811466 /* KIFTests.xcconfig */; };
 		6CB56EAD147363B700D4F7FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB56EAC147363B700D4F7FF /* UIKit.framework */; };
 		6CB56EAF147363B700D4F7FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB56EAE147363B700D4F7FF /* Foundation.framework */; };
 		6CB56EB1147363B700D4F7FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB56EB0147363B700D4F7FF /* CoreGraphics.framework */; };
@@ -15,20 +26,55 @@
 		6CB56EBD147363B700D4F7FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB56EBC147363B700D4F7FF /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6C38E6741473732300212999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C38E66D1473732300212999 /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AAB07268139719AC008AF393;
+			remoteInfo = KIF;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		6C38E66A1473720A00212999 /* KIFFTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIFFTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C38E66D1473732300212999 /* KIF.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KIF.xcodeproj; path = Frameworks/KIF/KIF.xcodeproj; sourceTree = "<group>"; };
+		6C38E6941473780F00212999 /* MyApp.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = MyApp.xcconfig; path = Configuration/MyApp.xcconfig; sourceTree = "<group>"; };
+		6C407DD5147381B100811466 /* KIFTestScenario+Example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KIFTestScenario+Example.h"; sourceTree = "<group>"; };
+		6C407DD6147381B100811466 /* KIFTestScenario+Example.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KIFTestScenario+Example.m"; sourceTree = "<group>"; };
+		6C407DD7147381B100811466 /* KIFTestStep+Example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KIFTestStep+Example.h"; sourceTree = "<group>"; };
+		6C407DD8147381B100811466 /* KIFTestStep+Example.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KIFTestStep+Example.m"; sourceTree = "<group>"; };
+		6C407DD9147381B100811466 /* MyAppKIFController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAppKIFController.h; sourceTree = "<group>"; };
+		6C407DDA147381B100811466 /* MyAppKIFController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAppKIFController.m; sourceTree = "<group>"; };
+		6C407DDE1473826100811466 /* KIFTests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = KIFTests.xcconfig; path = Configuration/KIFTests.xcconfig; sourceTree = "<group>"; };
+		6C407DFC1473834D00811466 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		6C407DFD1473836000811466 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		6C407DFE147383FD00811466 /* KIFTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIFTests-Prefix.pch"; sourceTree = "<group>"; };
 		6CB56EA8147363B700D4F7FF /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB56EAC147363B700D4F7FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6CB56EAE147363B700D4F7FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6CB56EB0147363B700D4F7FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6CB56EB4147363B700D4F7FF /* MyApp-Info.plist */ = {isa = PBXFileReference; path = "MyApp-Info.plist"; sourceTree = "<group>"; };
+		6CB56EB4147363B700D4F7FF /* MyApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyApp-Info.plist"; sourceTree = "<group>"; };
 		6CB56EB6147363B700D4F7FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6CB56EB8147363B700D4F7FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6CB56EBA147363B700D4F7FF /* MyApp-Prefix.pch */ = {isa = PBXFileReference; path = "MyApp-Prefix.pch"; sourceTree = "<group>"; };
-		6CB56EBB147363B700D4F7FF /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		6CB56EBA147363B700D4F7FF /* MyApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyApp-Prefix.pch"; sourceTree = "<group>"; };
+		6CB56EBB147363B700D4F7FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6CB56EBC147363B700D4F7FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6CB56ED2147363DA00D4F7FF /* KIFTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "KIFTests-Info.plist"; path = "/Volumes/REA/innov/October2011/MyApp/KIFTests-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6C38E6611473720A00212999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C38E677147373D000212999 /* libKIF.a in Frameworks */,
+				6C38E6621473720A00212999 /* UIKit.framework in Frameworks */,
+				6C38E6631473720A00212999 /* Foundation.framework in Frameworks */,
+				6C38E6641473720A00212999 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CB56EA5147363B700D4F7FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,9 +88,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C38E66E1473732300212999 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C38E6751473732300212999 /* libKIF.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C38E6761473735D00212999 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				6C407DDE1473826100811466 /* KIFTests.xcconfig */,
+				6C38E6941473780F00212999 /* MyApp.xcconfig */,
+				6C407DFC1473834D00811466 /* Debug.xcconfig */,
+				6C407DFD1473836000811466 /* Shared.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		6C38E698147378D900212999 /* KIFTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C407DFE147383FD00811466 /* KIFTests-Prefix.pch */,
+				6C407DD5147381B100811466 /* KIFTestScenario+Example.h */,
+				6C407DD6147381B100811466 /* KIFTestScenario+Example.m */,
+				6C407DD7147381B100811466 /* KIFTestStep+Example.h */,
+				6C407DD8147381B100811466 /* KIFTestStep+Example.m */,
+				6C407DD9147381B100811466 /* MyAppKIFController.h */,
+				6C407DDA147381B100811466 /* MyAppKIFController.m */,
+				6CB56ED2147363DA00D4F7FF /* KIFTests-Info.plist */,
+			);
+			path = KIFTests;
+			sourceTree = "<group>";
+		};
 		6CB56E9D147363B700D4F7FF = {
 			isa = PBXGroup;
 			children = (
+				6C38E698147378D900212999 /* KIFTests */,
+				6C38E6761473735D00212999 /* Configuration */,
 				6CB56EB2147363B700D4F7FF /* MyApp */,
 				6CB56EAB147363B700D4F7FF /* Frameworks */,
 				6CB56EA9147363B700D4F7FF /* Products */,
@@ -55,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				6CB56EA8147363B700D4F7FF /* MyApp.app */,
+				6C38E66A1473720A00212999 /* KIFFTests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +145,7 @@
 		6CB56EAB147363B700D4F7FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6C38E66D1473732300212999 /* KIF.xcodeproj */,
 				6CB56EAC147363B700D4F7FF /* UIKit.framework */,
 				6CB56EAE147363B700D4F7FF /* Foundation.framework */,
 				6CB56EB0147363B700D4F7FF /* CoreGraphics.framework */,
@@ -93,6 +177,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6C38E65D1473720A00212999 /* KIFTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C38E6671473720A00212999 /* Build configuration list for PBXNativeTarget "KIFTests" */;
+			buildPhases = (
+				6C38E65E1473720A00212999 /* Sources */,
+				6C38E6611473720A00212999 /* Frameworks */,
+				6C38E6651473720A00212999 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KIFTests;
+			productName = MyApp;
+			productReference = 6C38E66A1473720A00212999 /* KIFFTests.app */;
+			productType = "com.apple.product-type.application";
+		};
 		6CB56EA7147363B700D4F7FF /* MyApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CB56EC0147363B700D4F7FF /* Build configuration list for PBXNativeTarget "MyApp" */;
@@ -129,14 +230,40 @@
 			mainGroup = 6CB56E9D147363B700D4F7FF;
 			productRefGroup = 6CB56EA9147363B700D4F7FF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6C38E66E1473732300212999 /* Products */;
+					ProjectRef = 6C38E66D1473732300212999 /* KIF.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6CB56EA7147363B700D4F7FF /* MyApp */,
+				6C38E65D1473720A00212999 /* KIFTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		6C38E6751473732300212999 /* libKIF.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKIF.a;
+			remoteRef = 6C38E6741473732300212999 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
+		6C38E6651473720A00212999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C38E6661473720A00212999 /* InfoPlist.strings in Resources */,
+				6C407DDF1473826100811466 /* KIFTests.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CB56EA6147363B700D4F7FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,6 +275,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6C38E65E1473720A00212999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C38E65F1473720A00212999 /* main.m in Sources */,
+				6C38E6601473720A00212999 /* AppDelegate.m in Sources */,
+				6C407DDB147381B100811466 /* KIFTestScenario+Example.m in Sources */,
+				6C407DDC147381B100811466 /* KIFTestStep+Example.m in Sources */,
+				6C407DDD147381B100811466 /* MyAppKIFController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CB56EA4147363B700D4F7FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -171,8 +310,22 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6C38E6681473720A00212999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C407DDE1473826100811466 /* KIFTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		6C38E6691473720A00212999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
 		6CB56EBE147363B700D4F7FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C407DFC1473834D00811466 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
@@ -220,6 +373,7 @@
 		};
 		6CB56EC1147363B700D4F7FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C38E6941473780F00212999 /* MyApp.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyApp/MyApp-Prefix.pch";
@@ -243,6 +397,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6C38E6671473720A00212999 /* Build configuration list for PBXNativeTarget "KIFTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C38E6681473720A00212999 /* Debug */,
+				6C38E6691473720A00212999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6CB56EA2147363B700D4F7FF /* Build configuration list for PBXProject "MyApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -259,6 +422,7 @@
 				6CB56EC2147363B700D4F7FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

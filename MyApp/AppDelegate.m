@@ -8,17 +8,36 @@
 
 #import "AppDelegate.h"
 
+#if RUN_KIF_TESTS
+#import "MyAppKIFController.h"
+#endif
+
 @implementation AppDelegate
 
 @synthesize window = _window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    return YES;
+  
+  UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(100., 50., 100., 100.)];
+  [title setText:@"My App"];
+  
+  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  // Override point for customization after application launch.
+  self.window.backgroundColor = [UIColor whiteColor];
+  
+  [[self window] addSubview:title];
+  
+  [self.window makeKeyAndVisible];
+  
+#if RUN_KIF_TESTS
+  [[MyAppKIFController sharedInstance] startTestingWithCompletionBlock:^{
+    // Exit after the tests complete so that CI knows we're done
+    exit([[MyAppKIFController sharedInstance] failureCount]);
+  }];
+#endif
+  
+  return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
